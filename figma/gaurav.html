@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .om{
+            height: 500px;
+            width: 500px;
+            border: 3px  red dotted;
+            background-color: aqua;
+        }
+        h2{
+            text-align: center;
+        }
+        .y{
+            width: 150px;
+            height: 50px;
+            background-color: red;
+            border: dotted 3px yellow;
+            margin-left: 40%;
+            margin-top: 60px;
+        }
+        button{
+            background-color: red;
+        }
+        button:hover{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>hello world <p>this is the new item</p></h1>
+    <div class="om">
+        <h2>hello friend </h2>
+        <input type="text" name="" id="x">
+        <button onclick="call()">call</button>
+        <div class="y"></div>
+    </div>
+
+    <script>
+        function call() 
+        {
+           var x=  document.getElementById('x').value
+           
+            // document.write(x)
+            document.getElementsByClassName('y')[0].innerHTML=x
+
+        }
+        call()
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
